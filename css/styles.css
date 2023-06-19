@@ -1,0 +1,491 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*small*/
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/*medium*/
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/*large*/
+@media (min-width: 1200px) {
+	.container {
+		width: 1250px;
+	}
+}
+
+/* start all*/
+.all {
+	display: flex;
+}
+/* end all*/
+
+/*start navigation*/
+
+.navigation,
+.top,
+ul,
+.container {
+	width: 200px;
+}
+
+.navigation {
+	margin-left: 140px;
+}
+
+.navigation .container {
+	position: sticky;
+	top: 0px;
+}
+
+.navigation ul {
+	list-style-type: none;
+}
+
+.navigation .top ul li {
+	padding: 10px 10px;
+}
+
+.navigation .top h3 {
+	padding-top: 20px;
+	font-size: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	letter-spacing: 3px;
+	margin-bottom: 80px;
+}
+
+.navigation ul a {
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	color: rgb(117, 115, 115);
+	font-weight: bold;
+}
+
+.navigation .top ul li:not(.options, :first-child):hover {
+	background-color: rgb(219, 214, 214);
+	color: black;
+	cursor: pointer;
+}
+
+.navigation .bottom ul li:hover {
+	background-color: rgb(219, 214, 214);
+	color: black;
+	cursor: pointer;
+}
+
+.navigation ul li:not(.options):hover a {
+	color: black;
+}
+
+.navigation .top ul .choix a {
+	color: black;
+}
+
+.navigation .top ul .choix::after {
+	content: "\25BC";
+	font-size: 13px;
+	position: relative;
+	left: 5px;
+	bottom: 1px;
+}
+
+.navigation .top ul .options {
+	display: none;
+	margin-bottom: -160px;
+}
+
+.navigation .top ul:hover .options {
+	display: block;
+	margin-bottom: 0px;
+}
+
+.navigation .top ul .display {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.navigation .top ul .options a {
+	padding: 8px 8px;
+	font-size: 16px;
+}
+
+.navigation .top ul .options a:hover {
+	color: black;
+}
+
+.navigation .top ul .options a:hover {
+	background-color: rgb(219, 214, 214);
+}
+
+.navigation .bottom ul li {
+	padding: 0 10px;
+}
+
+.navigation .bottom ul {
+	margin-top: 50px;
+	line-height: 2;
+}
+.navigation .bottom ul a {
+	font-size: 15px;
+	color: rgb(31, 29, 29);
+}
+/*end navigation*/
+
+/*start header*/
+.content {
+	width: 100%;
+	margin-right: 200px;
+	margin-left: 30px;
+}
+
+.content .header .up {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	position: relative;
+}
+
+.content .header .up h1 {
+	font-size: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+}
+
+.content .header .up .icons {
+	position: absolute;
+	right: 0px;
+}
+
+.content .header .up .icons i {
+	font-size: 25px;
+	padding: 0 8px;
+}
+/*end header*/
+
+/*start first_content*/
+.first_content {
+	margin-top: 25px;
+}
+
+.first_content .box {
+	position: relative;
+}
+
+.first_content .box .title {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+}
+
+.first_content .box .title h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+.first_content .box .title h2 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.first_content .box .title p {
+	font-size: 18px;
+	font-weight: 100;
+	background-color: black;
+	width: fit-content;
+	padding: 15px 20px;
+}
+
+.first_content .box .title p:hover {
+	background-color: rgb(168, 164, 164);
+	color: black;
+	cursor: pointer;
+}
+/*end first_content*/
+
+.content .sep {
+	color: rgb(165, 161, 161);
+	font-family: "Montserrat", sans-serif;
+	margin-top: 15px;
+}
+
+/*start second_content*/
+
+.second_content {
+	margin-top: 20px;
+}
+
+.second_content .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.second_content .boxes .box {
+	position: relative;
+}
+
+.second_content .boxes .box h3 {
+	color: white;
+	background-color: black;
+	padding: 7px 10px;
+	position: absolute;
+	width: fit-content;
+	font-size: 15px;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.second_content .boxes .box:hover h3 {
+	display: block;
+}
+
+.second_content .boxes .box h3:hover {
+	background-color: rgb(168, 164, 164);
+	cursor: pointer;
+	color: black;
+}
+
+.second_content .boxes div {
+	font-family: "Montserrat", sans-serif;
+}
+
+.second_content .boxes div img {
+	filter: saturate(0.4);
+}
+
+.second_content .boxes div h4 {
+	color: rgb(117, 115, 115);
+	margin-top: 10px;
+	margin-bottom: 2px;
+	font-size: 15px;
+}
+
+.second_content .boxes div p {
+	color: black;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+/*end second_content*/
+
+/*start third_content*/
+.third_content {
+	font-family: "Montserrat", sans-serif;
+	background-color: black;
+	color: white;
+	padding-bottom: 50px;
+}
+
+.third_content h1 {
+	font-size: 35px;
+	letter-spacing: 2px;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-weight: 100;
+}
+
+.third_content p {
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+.third_content input {
+	width: 95%;
+	margin-left: 20px;
+	padding: 10px 5px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.third_content a:hover {
+	color: rgb(36, 35, 35);
+	background-color: rgb(182, 179, 179);
+}
+
+.third_content a {
+	width: fit-content;
+	padding: 8px 12px;
+	background-color: rgb(248, 82, 53);
+	margin-left: 20px;
+	color: white;
+	text-decoration: none;
+}
+/*end third_content*/
+
+/*start fourth_content*/
+.fourth_content {
+	display: flex;
+	justify-content: space-around;
+	background-color: #eee;
+}
+
+.fourth_content .part1 {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 20px;
+}
+
+.fourth_content .part1 h1 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: rgb(41, 40, 40);
+	margin-bottom: 15px;
+}
+
+.fourth_content .part1 h6 {
+	font-size: 13px;
+	color: rgb(102, 99, 99);
+	font-weight: 100;
+	margin-bottom: 12px;
+}
+
+.fourth_content .part1 input {
+	padding: 8px 10px;
+	width: 250px;
+	margin-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	border: 2px solid rgb(172, 166, 166);
+	border-radius: 2px;
+}
+
+.fourth_content .part1 input:focus {
+	border-color: black;
+}
+
+.fourth_content .part1 p {
+	background-color: black;
+	color: white;
+	padding: 12px 10px;
+	width: 255px;
+	font-size: 13px;
+}
+
+.fourth_content .part1 p:hover {
+	background-color: rgb(172, 166, 166);
+	color: black;
+	cursor: pointer;
+}
+
+.fourth_content .part2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 70px;
+}
+
+.fourth_content .part2 h1 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: rgb(41, 40, 40);
+	margin-bottom: 15px;
+}
+
+.fourth_content .part2 a {
+	color: rgb(41, 40, 40);
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.fourth_content .part3 {
+	margin-top: 70px;
+}
+
+.fourth_content .part3 .info {
+	display: flex;
+	align-items: center;
+}
+
+.fourth_content .part3 h1 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: rgb(41, 40, 40);
+	margin-bottom: 15px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.fourth_content .part3 .store h1 {
+	margin-bottom: 20px;
+}
+
+.fourth_content .part3 .paiement h1 {
+	margin-top: 25px;
+}
+
+.fourth_content .part3 .info {
+	margin-bottom: 10px;
+}
+
+.fourth_content .part3 .info p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-left: 5px;
+}
+
+.fourth_content .part3 .social_media {
+	margin-top: 30px;
+}
+
+.fourth_content .part3 .social_media i {
+	font-size: 20px;
+}
+
+.fourth_content .part3 .social_media i:hover {
+	color: rgb(172, 166, 166);
+}
+/*end fourth_content*/
+
+/*start footer*/
+footer {
+	font-family: "Montserrat", sans-serif;
+	background-color: black;
+	color: white;
+}
+footer a {
+	font-size: 15px;
+	color: white;
+}
+footer p {
+	text-align: center;
+	padding: 25px;
+}
+/*end footer*/
